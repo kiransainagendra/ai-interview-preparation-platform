@@ -129,3 +129,6 @@ LOGIN_URL = 'login'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+ALLOWED_HOSTS = ["*"]
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
