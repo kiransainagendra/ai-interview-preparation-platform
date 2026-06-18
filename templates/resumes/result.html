@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="py-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h1 class="fw-bold">Resume Analysis Result</h1>
+            <p class="text-muted-custom">Personalized preparation report based on your resume.</p>
+        </div>
+
+        <a href="{% url 'dashboard' %}" class="btn btn-outline-info">Back to Dashboard</a>
+    </div>
+
+    <div class="glass-card">
+        <pre style="white-space: pre-wrap; color:white; font-family:inherit; font-size:17px; line-height:1.8;">{{ resume.analysis }}</pre>
+    </div>
+
+    <div class="mt-4">
+        <a href="{% url 'upload_resume' %}" class="btn btn-custom">
+            Analyze Another Resume
+        </a>
+    </div>
+</div>
+{% endblock %}

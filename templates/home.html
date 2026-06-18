@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="hero">
+    <div class="row w-100 align-items-center">
+
+        <div class="col-lg-6">
+            <span class="badge rounded-pill text-bg-primary mb-3 px-3 py-2">
+                AI-Powered Interview Preparation Platform
+            </span>
+
+            <h1 class="display-3 fw-bold">
+                Crack Your Next Interview with AI
+            </h1>
+
+            <p class="lead mt-4 text-muted-custom">
+                Upload your resume, get AI-powered feedback, generate personalized
+                interview questions and prepare smarter.
+            </p>
+
+            <a href="{% url 'register' %}" class="btn btn-custom btn-lg mt-3">
+    Get Started
+</a>
+
+            <div class="row mt-4 g-3">
+                <div class="col-4">
+                    <div class="glass-card text-center p-3">
+                        <h3 class="mb-0">500+</h3>
+                        <small class="text-muted-custom">Questions</small>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="glass-card text-center p-3">
+                        <h3 class="mb-0">95%</h3>
+                        <small class="text-muted-custom">Smart AI</small>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="glass-card text-center p-3">
+                        <h3 class="mb-0">24/7</h3>
+                        <small class="text-muted-custom">Practice</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="glass-card">
+                <h3 class="fw-bold">Platform Features</h3>
+
+                <hr class="border-light">
+
+                <ul class="fs-5 lh-lg">
+                    <li>Resume Analysis</li>
+                    <li>AI Interview Questions</li>
+                    <li>Skill Gap Detection</li>
+                    <li>Mock Interview Preparation</li>
+                    <li>Personalized Feedback</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
